@@ -11,8 +11,17 @@ window.onload = function() {
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
 
-  let myExcuse =
-    who[whoIndex] + " " + action[actionIndex] + " " + what[whatIndex];
+  //Coding Guidelines Challenge: placed each each into a variable
+
+  let whoItem = who[whoIndex];
+  let actionItem = action[actionIndex];
+  let whatItem = what[whatIndex];
+
+  let myExcuse = whoItem + " " + actionItem + " " + whatItem;
+
+  // my orignal code:
+  // let myExcuse =
+  // who[whoIndex] + " " + action[actionIndex] + " " + what[whatIndex];
 
   document.getElementById("excuse").innerHTML = myExcuse;
 };
